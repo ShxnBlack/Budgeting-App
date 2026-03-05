@@ -3,7 +3,7 @@ import { load, save } from "./storage.jsx"
 import {
   MONTH_NAMES, DARK, LIGHT,
   DEFAULT_INCOME, makeDefaultCategories,
-} from "./utils.js"
+} from "./utils.jsx"
 import Budget       from "./tabs/Budget.jsx"
 import Transactions from "./tabs/Transactions.jsx"
 import Trends       from "./tabs/Trends.jsx"
