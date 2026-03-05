@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-import { load, save } from "./storage.js"
+import { load, save } from "./storage.jsx"
 import {
   MONTH_NAMES, DARK, LIGHT,
   DEFAULT_INCOME, makeDefaultCategories,
