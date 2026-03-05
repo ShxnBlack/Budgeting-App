@@ -3,11 +3,17 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
+  resolve: {
+    extensions: ['.jsx', '.js', '.tsx', '.ts'],
+  },
   esbuild: {
     loader: 'jsx',
     include: /src\/.*\.[jt]sx?$/,
+    exclude: [],
   },
   optimizeDeps: {
-    esbuildOptions: { loader: { '.js': 'jsx' } },
+    esbuildOptions: {
+      loader: { '.js': 'jsx' },
+    },
   },
 })
